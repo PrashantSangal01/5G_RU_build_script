@@ -24,9 +24,9 @@ cd ${XRAN_DIR}
 cd ${PRJ_BUILD_DIR}
 cp $ORAN_BUILD_DIR/sample-app .
 
-if [ $# -eq 2 ]
+if [ $# -eq 4 ]
 then
-	sudo scp sample-app $1@$2:~/
+	sudo scp sample-app $3@$4:~/
 else
 	echo " Confirm the destination to copy"
 fi
